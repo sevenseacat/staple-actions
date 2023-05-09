@@ -21,7 +21,7 @@ runs:
   using: "composite"
   steps:
     - name: Install Erlang and Elixir
-      uses: team-alembic/staple-actions/actions/install-elixir@main
+      uses: sevenseacat/staple-actions/actions/install-elixir@test/dependent-actions
       with:
         working-directory: "${{ inputs.working-directory }}"
     - name: Retrieve Mix Dependencies Cache
